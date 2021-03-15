@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+    <link rel="stylesheet" href="./css/swiper.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- AOS Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- pages style -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <nav
+        id="navbaradd"
+        class="navbar navbar-expand-lg navbar-light fixed-top bg-transparent"
+      >
+        <div class="container header_nav">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse d-flex justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav d-flex justify-content-between w-50">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="home__container">
+      <div class="container">
+        <div class="row">
+          <div class="col-6 home_left">
+            <p style="color: #fec576">Hello, I'm</p>
+            <h2>NGUYEN NGOC <span>QUANG</span></h2>
+            <p>Front-end development</p>
+          </div>
+          <div
+            class="col-6 d-block text-center home_right animate__animated animate__zoomIn"
+          >
+            <img
+              id="avatar"
+              src="./img/Quang.jpg"
+              alt=""
+              class="img-fluid float-end rounded-circle"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="main_content container-fluid">
+      <div class="tab-content container" id="myTabContent">
+        <div class="container-fluid p-0 bg-transparent">
+          <div id="about" class="container tab-pane active">
+            <h3>About Me</h3>
+            <div class="row">
+              <div  data-aos="fade-right"
+                class="col-5 main_content_img text-center"
+              >
+                <img
+                  src="./img/Quang2.jpg"
+                  class="img-fluid"
+                  style="max-width: 70%"
+                  alt=""
+                />
+              </div>
+              <div class="col-7">
+                <div class="about_content animate__animated">
+                  <div  data-aos="fade-left"
+                    class="about_content_item d-flex mb-5"
+                  >
+                    <div class="item_left">
+                      <i class="fa fa-user"></i> <span> Name:</span>
+                    </div>
+                    <div class="item_right">
+                      <p>NGUYEN NGOC QUANG</p>
+                    </div>
+                  </div>
+                  <div  data-aos="fade-left"
+                    class="about_content_item d-flex mb-5"
+                  >
+                    <div class="item_left">
+                      <i class="fa fa-birthday-cake"></i>
+                      <span> Birthday:</span>
+                    </div>
+                    <div class="item_right">
+                      <p>12/04/1986</p>
+                    </div>
+                  </div>
+                  <div  data-aos="fade-left"
+                    class="about_content_item d-flex mb-5"
+                  >
+                    <div class="item_left">
+                      <i class="fa fa-map-marker-alt"></i>
+                      <span> Address:</span>
+                    </div>
+                    <div class="item_right">
+                      <p>Nghi Xuân - Nghi Lộc - Nghệ An</p>
+                    </div>
+                  </div>
+                  <div  data-aos="fade-left"
+                    class="about_content_item d-flex mb-5"
+                  >
+                    <div class="item_left">
+                      <i class="fa fa-envelope"></i> <span> Email:</span>
+                    </div>
+                    <div class="item_right">
+                      <p>quanggiatrang@gmail.com</p>
+                    </div>
+                  </div>
+                  <div  data-aos="fade-left"
+                    class="about_content_item d-flex mb-5"
+                  >
+                    <div class="item_left">
+                      <i class="fa fa-phone"></i> <span> Phone:</span>
+                    </div>
+                    <div class="item_right">
+                      <p>086-756-2248</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="container-fluid">
+      <div class="container">
+        <h3>Portfolio</h3>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./img/bootstrap.jpg"
+                class="img-fluid img_config"
+                alt=""
+              />
+              <div class="slide_content">
+                <h5>Merged WEBSITE</h5>
+                <p>Simple example with technology</p>
+                <p>HTML5, CSS3, Bootstrap 4</p>
+                <button class="btn btn-danger"><a href="https://github.com/coderga/webbootstrap" target="_blank"></a>Link Github</button>
+                <button class="btn btn-primary"><a href="https://coderga.github.io/webbootstrap/"></a>Link Demo</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/fiverr.jpg" class="img-fluid img_config" alt="" />
+              
+              <div class="slide_content">
+                <h5>Fiverr WEBSITE</h5>
+                <p>Simple example with technology</p>
+                <p>HTML5, CSS3, Bootstrap 4</p>
+                <button class="btn btn-danger"><a href="https://github.com/coderga/baitap-fiverr" target="_blank"></a>Link Github</button>
+                <button class="btn btn-primary"><a href="https://coderga.github.io/baitap-fiverr/"></a>Link Demo</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="./img/git.jpg" class="img-fluid img_config" alt="" />
+              <div class="slide_content">
+                <h5>Trợ lý ảo</h5>
+                <p>Một số code lập trình trợ lý ảo bằng</p>
+                <p>ngôn ngữ Python</p>
+                <button class="btn btn-danger"><a href="https://github.com/coderga/trolyao" target="_blank"></a>Link Github</button>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+      <!-- Swiper -->
+    </section>
+
+    <section id="resume" class="container-fluid">
+      <div class="row resume_content">
+        <div class="col-6 resume_content_left py-5">
+          <div class="row justify-content-end">
+            <h4>HỌC TẬP</h4>
+          </div>
+          <div class="row d-flex">
+            <div class="resume_content_item">
+              <p>Tốt nghiệp đại học chuyên nghành cơ khí</p>
+              <div class="resume_year">2010</div>
+            </div>
+
+            <div class="resume_content_item">
+              <p>Tốt nghiệp trường tiếng Nhật tại Nhật Bản chứng chỉ N3</p>
+              <div class="resume_year">2016-2018</div>
+            </div>
+            <div class="resume_content_item">
+              <p>Tốt nghiệp trường Senmon Nhật Bản chuyên nghành CNTT</p>
+              <div class="resume_year">2018-2020</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 resume_content_right py-5">
+          <div class="row">
+            <h4>KINH NGHIỆM</h4>
+          </div>
+          <div class="row d-flex">
+            <div class="resume_content_item">
+              <p>2 năm kinh nghiệm kỹ thuật viên cơ khí</p>
+              <div class="resume_year">2012-2014</div>
+            </div>
+            <div class="resume_content_item">
+              <p>2 năm kinh nghiệp lập trình phay CNC</p>
+              <div class="resume_year">2014-2016</div>
+            </div>
+            <div class="resume_content_item">
+              <p>1 năm kinh nghiệp lập trình dự án Cybersoft</p>
+              <div class="resume_year">2021</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="container-fluid skills">
+      <div class="container py-5" style="width: 70%">
+        <div class="skills_img">
+          <img src="./img/skills.png" class="img-fluid" alt="" />
+        </div>
+        <div class="skills_rec d-flex align-items-center skills_html">
+          <div class="skill_circle">
+            <img src="./img/html5.png" class="img-fluid p-2" alt="" />
+          </div>
+          <div class="skills_content pl-3">
+            HTML5 / CSS3 / BOOTSTRAP / SASS / RESPONSIVE
+          </div>
+        </div>
+        <div class="skills_rec d-flex align-items-center skills_javascript">
+          <div class="skill_circle">
+            <img src="./img/javascript.png" class="img-fluid p-1" alt="" />
+          </div>
+          <div class="skills_content pl-3">ES5 / ES6 / JQUERY / AJAX</div>
+        </div>
+
+        <div class="skills_rec d-flex align-items-center skills_github">
+          <div class="skill_circle">
+            <img src="./img/github.svg" class="img-fluid p-2" alt="" />
+          </div>
+          <div class="skills_content pl-3">GITHUB / GITHUB PAGES</div>
+        </div>
+
+        <div class="skills_rec d-flex align-items-center skills_pythonjava">
+          <div class="skill_circle">
+            <img src="./img/morelang.png" class="img-fluid p-0" alt="" />
+          </div>
+          <div class="skills_content pl-3">PYTHON / JAVA</div>
+        </div>
+
+        <div class="skills_rec d-flex align-items-center skills_lang">
+          <div class="skill_circle">
+            <img src="./img/lang.png" class="img-fluid p-0" alt="" />
+          </div>
+          <div class="skills_content pl-3">Japanese N3</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="container-fluid py-3">
+      <div class="container align-items-center">
+        <h3>Contact</h3>
+        <div class="row">
+          <div class="contact_website col-6 p-0 d-flex" style="background-color: #2a75a9">
+            
+            <div><img src="./img/QRCode/coderga.com.png" class="img-fluid" alt="" /></div>
+            <div class="contact_website_content">
+              <h3>MY WEBSITE</h3>
+              <p><a href="coderga.com">coderga.com</a></p>
+              <p>Trang blog của tôi về thủ thuật, tip lập trình.</p>
+            </div>
+          </div>
+          <div class="contact_website col-6 p-0 d-flex" style="background-color: #274257">
+            <div><img src="./img/QRCode/fbhuyetsactanduong.png" class="img-fluid" alt="" /></div>
+            <div class="contact_website_content">
+              <h3>MY FACEBOOK</h3>
+              <p><a href="fb.com/huyetsactanduong">Triều Dương</a></p>
+              <p>Kết nối với tôi qua facebook.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="contact_website col-6 p-0 d-flex" style="background-color: #2a75a9">
+            
+            <div><img src="./img/QRCode/youtube-coderga.png" class="img-fluid" alt="" /></div>
+            <div class="contact_website_content">
+              <h3>MY YOUTUBE</h3>
+              <p><a href="youtube.com/coderga">youtube.com/coderga</a></p>
+              <p>Trang youtube của tôi về lập trình.</p>
+            </div>
+          </div>
+          <div class="contact_website col-6 p-0 d-flex" style="background-color: #274257">
+            <div><img src="./img/QRCode/github-coderga.png" class="img-fluid" alt="" /></div>
+            <div class="contact_website_content">
+              <h3>MY GITHUB</h3>
+              <p><a href="https://github.com/coderga">github.com/coderga</a></p>
+              <p>Github của tôi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="text-center text-info pb-3">Copyright &#169; 2021 by <a href="coderga.com" class="text-danger">Coderga</a></footer>
+    <!-- Optional JavaScript -->
+    <!-- font-awesome -->
+    <script src="./fontawesome/js/all.min.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src=" ./bootstrap/js/jquery-3.4.1.js"></script>
+    <script src="./bootstrap/js/popper.min.js"></script>
+    <script src=" ./bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- AOS Animate On Scroll Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        // slidesPerView: 1,
+        spaceBetween: 10,
+        loop: true,
+        observer: true,
+        observeParents: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      function myFunction() {
+        if (
+          document.body.scrollTop > 0 ||
+          document.documentElement.scrollTop > 0
+        ) {
+          document.getElementById("navbaradd").classList.add("navbar__add");
+        } else {
+          document.getElementById("navbaradd").classList.remove("navbar__add");
+        }
+      }
+    </script>
+  </body>
+</html>

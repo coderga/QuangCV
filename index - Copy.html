@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="./fontawesome/css/all.min.css" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css" />
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"> -->
+  <link rel="stylesheet" href="./css/swiper.css">
+  <!-- pages style -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./img/bootstrap.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/fiverr.jpg" class="img-fluid" alt="">
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/git.jpg" class="img-fluid" alt="">
+      </div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+    </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- font-awesome -->
+  <script src="./fontawesome/js/all.min.js"></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src=" ./bootstrap/js/jquery-3.4.1.js"></script>
+  <script src="./bootstrap/js/popper.min.js"></script>
+  <script src=" ./bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Swiper JS -->
+  <script src="./js/swiper-bundle.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      // slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding-bottom:100px;
+  }
+
+  .swiper-slide {
+    /* text-align: center; */
+    font-size: 18px;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+  }
+  .swiper-pagination {
+    top: 530px;
+}
+.swiper-button-next, .swiper-container-rtl .swiper-button-prev{
+  right:50px;
+}
+.swiper-button-prev, .swiper-container-rtl .swiper-button-next{
+  left: 50px;
+}
+#portfolio {
+  /* box-shadow: 0 0 15px 1px rgba(236, 229, 229, 0.671); */
+  padding-bottom:50px;
+  /* background-color: #48a9fe; */
+  background: rgb(238,174,202);
+  background: linear-gradient(156deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+
+#portfolio .img_config{
+  max-height: 500px;
+  max-width: 70%;
+  /* position: relative; */
+  border: 2px solid #616aaa;
+  box-shadow: 0 2.8px 2.3px -34px rgba(0, 49, 52, 0.206), 0 9.4px 7.8px -34px rgba(0, 49, 52, 0.304), 0 42px 35px -34px rgba(0, 49, 52, 0.51);
+  border-radius:30px;
+}
+#portfolio .slide_content{
+  position: absolute;
+  bottom: -50px;
+  right: 130px;
+  border: 2px solid #fff;
+  /* max-width:400px; */
+  line-height: 1.8;
+  background-color: #fff;
+  border-radius:10px;
+  padding: 10px;
+  /* opacity: 0.8; */
+  color: #616aaa;
+  box-shadow:0 0 10px 0 rgba(0, 49, 52, 0.7);
+  display: block;
+  height:200px;
+  width: 400px;
+}
+#portfolio .slide_content h5{
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: left;
+  color: #2c304d;
+}
+#portfolio .slide_content p{
+  margin: 0;
+  text-align: left;
+  font-size: 16px;
+}
+#portfolio .slide_content button{
+  margin-top: 20px;
+  text-align: left;
+  font-size: 16px;
+  margin-right: 10px;
+}
+.btn{
+  line-height:1.2;
+}
