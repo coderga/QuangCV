@@ -99,7 +99,7 @@
         <div class="container">
           <h3>My Blog    </h3>
           <div class="blog">
-            <div class="blog01" id="blog01">
+            <div id="blog01">
               <div class="head-content">
                 <div class="content-title">
                   <h4>Lập trình Python bằng phần mềm Notepadd++</h4><img src="../images/blog-images/39.png" alt="">
@@ -134,11 +134,11 @@
                   <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/82ovekz1OwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                 </div>
               </div>
-              <div class="read-more"> 
-                <h5 class="h5-style" href="#" type="button" title="Đọc nội dung" onclick="something()">Đọc nội dung</h5>
+              <div class="read-more">
+                <h5 class="h5-style" href="#blog01" type="button" onclick="readmorecontent(&quot;blog-content01&quot;)">Đọc nội dung</h5><i class="fa fa-angle-double-right"></i>
               </div>
             </div>
-            <div class="blog02" id="blog02">
+            <div id="blog02">
               <div class="head-content">
                 <div class="content-title">
                   <h4>Responsive với mixin trong Sass</h4><img src="../images/blog-images/blog2-01.png" alt="">
@@ -156,25 +156,28 @@
                 <p>  Nếu muốn mix cả desktop first và mobile first ta thêm chút xíu nữa sẽ được như này</p><img src="../images/blog-images/blog2-07.png" alt="">
                 <p>  Có vẻ như đã phức tạp hơn 1 chút và không biết có ai hứng thú với cái này không?</p>
               </div>
-              <div class="read-more"> </div>
+              <div class="read-more">
+                <h5 class="h5-style" href="#blog02" type="button" onclick="readmorecontent(&quot;blog-content02&quot;)">Đọc nội dung</h5><i class="fa fa-angle-double-right"></i>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <script>
-        var something = function () {
-            document.querySelector("#blog-content01").style.display= "block";
-            document.querySelector("#blog02").style.display= "none";
-            document.querySelector(".h5-style").title= "Ẩn nội dung";
+        function readmorecontent(idname) {
+            var x1 = document.getElementById(idname);
+            var y = document.querySelector(".blog");
+            var current= document.getElementById(idname).nextElementSibling;
+            if (x1.style.display === "none"){
+                x1.style.display= "block";
+                current.querySelector(".h5-style").innerHTML= "Ẩn nội dung";
+                y.style.display= "block";
+            } else {
+                x1.style.display= "none";
+                current.querySelector(".h5-style").innerHTML= "Đọc nội dung";
+                y.style.display= "flex";
+            }
         }
-        
-        
-        
-        
-        
-        
-        
-            
       </script>
       <section class="container-fluid" id="skills">
         <div class="container">
