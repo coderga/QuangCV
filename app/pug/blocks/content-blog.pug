@@ -1,0 +1,113 @@
+#myblog.container-fluid
+    .container
+        h3 My Blog    
+        .blog
+            #blog01.blog01
+                .head-content
+                    .content-title
+                        h4 Lập trình Python bằng phần mềm Notepadd++
+                        img(src='../images/blog-images/39.png', alt='')
+                        p Hiện nay có rất nhiều phần mềm hỗ trợ cho việc lập trình tuy nhiên với các bạn mới làm quen với lập trình thì Notepadd ++ là phần mềm mà các bạn có thể sử dụng trước khi sử dụng những phần mềm khác.
+
+                #blog-content01.blog-content
+                    p Mặc định các bạn đã có thể lập trình đc Python trên Notepadd ++ rồi nhưng khi chạy chương trình chúng ta phải mở cửa sổ cmd hoặc powershell trên windows ra để chạy. Để thuận tiện cho việc lập trình, trong bài viết này mình sẽ hướng dẫn các bạn cách mở cửa sổ console bên dưới phần code để thuận tiện cho việc chạy chương trình. Với việc mở cửa sổ console này thì các bạn cũng có thể lập trình java thuận tiện hơn trên Notepadd ++.
+                    p Đầu tiên các bạn vào menu Plugins => Plugins Admin
+                    img(src='../images/blog-images/10.png', alt='')
+                    p Sau đó chúng ta cài đặt plugin NppExec bằng cách tích vào ô vuông và click Install ở góc bên phải cửa sổ
+                    img(src='../images/blog-images/11.png', alt='')
+                    p Sau khi cài đặt xong để hiện cửa sổ console chúng ta vào Plugins -> NppExec -> Show console như hình.
+                    img(src='../images/blog-images/12-1.png', alt='')
+                    p Cửa sổ console đã hiện ra.
+                    img(src='../images/blog-images/13.jpg', alt='')
+                    p Tuy nhiên để chạy được chương trình chúng ta phải chạy câu lệnh cmd để bắt đầu sử dụng.
+                    img(src='../images/blog-images/15.jpg', alt='')
+                    p Sau đó chúng ta đánh tên file python đã lập trình sẵn và chạy chương trình.
+                    img(src='../images/blog-images/16.jpg', alt='')
+                    img(src='../images/blog-images/17.jpg', alt='')
+                    p Thay vì gõ lệnh cmd các bạn cũng có thể sử dụng PowerShell của windows.
+                    img(src='../images/blog-images/18.jpg', alt='')
+                    p Khi chạy chương trình nếu ta chỉ đánh tên file sẽ xảy ra lỗi vì thế các bạn phải thêm ./ vào trước tên file. Ở đây của mình là ./hehe.py
+                    img(src='../images/blog-images/19.jpg', alt='')
+                    p Các bạn chú ý là để hiện thị được tiếng việt ở cửa sổ console thì phải thiết lập ở plugin như sau:
+                    img(src='../images/blog-images/20.png', alt='')
+                    img(src='../images/blog-images/21.png', alt='')
+                    img(src='../images/blog-images/22.png', alt='')
+                    p   Trong mục font này các bạn chọn font nào có thể hiện thị được tiếng việt ( có Vietnamese ở ô Script)
+                    img(src='../images/blog-images/23.png', alt='')
+                    p Trên menu của Notepadd++ chỗ Encoding chọn UTF-8
+                    img(src='../images/blog-images/24.png', alt='')
+                    p Ngoài ra, các bạn vào Setting của win
+                    img(src='../images/blog-images/25.png', alt='')
+                    p Chọn phần cài đặt ngôn ngữ
+                    img(src='../images/blog-images/26.png', alt='')
+                    img(src='../images/blog-images/27.png', alt='')
+                    img(src='../images/blog-images/28.png', alt='')
+                    img(src='../images/blog-images/29.png', alt='')
+                    p Cửa sổ hiện ra các bạn tích vào ô vuông trước chữ Beta như hình dưới và ấn OK 2 lần.
+                    img(src='../images/blog-images/30.png', alt='')
+                    p Các bạn cũng có thể thay đổi giao diện của Notepadd++ để trông đẹp hơn bằng cách:
+                    img(src='../images/blog-images/31.png', alt='')
+                    p Chọn 1 kiểu giao diện có sẵn.
+                    img(src='../images/blog-images/32.png', alt='')
+                    p Các bạn cũng có thể download các giao diện dành cho Notepadd++ trên mạng và vào thư mục cài đặt của Notepadd++. Nếu chưa có thư mục themes thì tạo thư mục và coppy file giao diện down được về vào thư mục themes đó
+                    img(src='../images/blog-images/33.png', alt='')
+                    img(src='../images/blog-images/34.png', alt='')
+                    p Sau đó thay đổi giao diện
+                    img(src='../images/blog-images/35.png', alt='')
+                    p Các bạn cũng có thể thay đổi màu chữ và nền của cửa sổ console
+                    img(src='../images/blog-images/36.png', alt='')
+                    img(src='../images/blog-images/37.png', alt='')
+                    p Đây là kết quả đạt được sau khi thay đổi của mình.
+                    img(src='../images/blog-images/39.png', alt='')
+                    p Xong. Như vậy là các bạn đã có thể lập trình Python, java trên Notepadd++ thuận tiện rồi đấy.
+                    p Các bạn có thể xem chi tiết hướng dẫn trên video:
+                    .video-wrapper
+                        iframe(width='560', height='315', src='https://www.youtube-nocookie.com/embed/82ovekz1OwE', title='YouTube video player', frameborder='0', allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture', allowfullscreen='')
+                .read-more 
+                    h5(href='#', type='button', onclick='something()') Đọc nội dung
+            #blog02.blog02
+                .head-content
+                    .content-title
+                        h4 Responsive với mixin trong Sass
+                        img(src='../images/blog-images/blog2-01.png', alt='')
+                        p Responsive website có thể không phải là vấn đề gì lớn đối với những người làm frontend lâu năm nhưng với những người mới bắt đầu thì thực sự không phải là dễ.
+
+                .blog-content#blog-content02
+                    p   Khi là việc với Sass ta có thể tạo 1 Mixin đơn giản như sau phục vụ cho việc Responsive
+                    img(src='../images/blog-images/blog2-02.png', alt='')
+                    p   Ta sử dụng như sau
+                    img(src='../images/blog-images/blog2-03.png', alt='')
+
+                    p   Việc lựa chọn các breakpoint tùy thuộc và dự án của các bạn. đây chỉ là 1 ví dụ mình đưa ra.
+                    p   Tuy nhiên thì dường như nó có vẻ đơn giản khi mà ta đang sử dụng Sass. Một Css preprocessors có thể làm được rất nhiều điều. Ví dụ như ta sẽ rút ngắn những dòng lệnh trên.
+                    p   Đầu tiên ta sẽ tạo 1 map dữ liệu breakpoint và screen
+                    img(src='../images/blog-images/blog2-04.png', alt='')
+                    p   Ở đây chúng ta sẽ lấy giá trị breakpoint của các màn hình hiển thị và in ra media queries 
+                    img(src='../images/blog-images/blog2-05.png', alt='')
+                    p   Đối với desktop first hoàn toàn tương tự. Ta thêm hàm if - else để kiểm tra screen nhập vào có chính xác không
+                    img(src='../images/blog-images/blog2-06.png', alt='')
+                    p   Nếu muốn mix cả desktop first và mobile first ta thêm chút xíu nữa sẽ được như này
+                    img(src='../images/blog-images/blog2-07.png', alt='')
+                    p   Có vẻ như đã phức tạp hơn 1 chút và không biết có ai hứng thú với cái này không?
+                .read-more 
+                    //- button(href='#', type='button', onclick='something()') Đọc nội dung
+
+
+
+
+
+
+
+script.
+    var something = function () {
+        document.querySelector("#blog-content01").style.display= "block";
+        document.querySelector("#blog02").style.display= "none";
+    }
+
+
+
+
+
+
+
+        

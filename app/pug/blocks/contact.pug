@@ -1,0 +1,44 @@
+// ======= Contact Section =======
+section#contact.container-fluid
+  .container
+    .contact-title
+      h3 Contact
+    .contact-content(data-aos='fade-in')
+      .content-info
+        .info
+          .address
+            i
+            h4 Location:
+            p Nghi Xuân - Nghi Lộc - Nghệ An
+          .email
+            i
+            h4 Email:
+            p quanggiatrang@gmail.com
+          .phone
+            i
+            h4 Call:
+            p 0867562248
+          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.339997226763!2d105.72262181465884!3d18.738344287282516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3139d34d07e6c8b1%3A0x6d22316f269ec4dc!2sQuang%20gia%20trang!5e0!3m2!1svi!2sbg!4v1645879968605!5m2!1svi!2sbg', loading='lazy', frameborder='0', style='border:0; width: 100%; height: 290px;', allowfullscreen='')
+      .content-message
+        form.php-email-form(action='forms/contact.php', method='post', role='form')
+          .group-name-email
+            .form-group
+              label(for='name') Your Name
+              input#name.form-control(type='text', name='name', required='')
+            .form-group
+              label(for='name') Your Email
+              input#email.form-control(type='email', name='email', required='')
+          .form-group
+            label(for='name') Subject
+            input#subject.form-control(type='text', name='subject', required='')
+          .form-group
+            label(for='name') Message
+            textarea.form-control(name='message', rows='10', required='')
+          .my-3
+            .loading Loading
+            .error-message
+            .sent-message Your message has been sent. Thank you!
+          .text-center
+            button(type='submit') Send Message
+            
+// End Contact Section

@@ -1,0 +1,78 @@
+script(type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js")
+script(type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js")
+script(src="js/main.js")
+
+//- jQuery first, then Popper.js, then Bootstrap JS
+//- script(src=' ./library/bootstrap/js/jquery-3.4.1.js')
+//- script(src='./library/bootstrap/js/popper.min.js')
+
+
+-
+  var linkjs = [
+    {url: "https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.0.7/swiper-bundle.min.js",title: "swiper"},
+    {url: "./library/swiper/swiper-bundle.min.js",title: "swiper-file"},
+    {url: "https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js",title: "slick"},
+    {url: "./library/slick/slick.min.js",title: "slick-file"},
+    {url: "https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js",title: "bootstrap"},
+    {url: "./library/bootstrap/js/bootstrap.min.js",title: "bootstrap-file"},
+    {url: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js",title: "fontawesome"},
+    {url: "./library/fontawesome/js/all.min.js",title: "fontawesome-file"},
+    {url: "https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js",title: "aos"},
+    {url: "./library/AOS/aos.js",title: "aos-file"},
+  ]
+
+each item in printlist
+  each url,count in linkjs
+    if item === url.title
+      +breakline
+      <!-- Link to #{item.toUpperCase()} js-->
+      script(src= url.url)
+
+
+
+
+
+
+
+
+//- AOS Animate On Scroll Library
+script.
+  AOS.init();
+
+
+
+//- Initialize Swiper
+script.
+  var swiper = new Swiper(".swiper-container", {
+  //- slidesPerView: 1,
+  spaceBetween: 25,
+  loop: true,
+  observer: true,
+  observeParents: true,
+  navigation: {
+  nextEl: ".swiper-button-next",
+  prevEl: ".swiper-button-prev",
+  },
+  scrollbar: {
+  el: '.swiper-scrollbar',
+  draggable: true,
+  },
+  });
+
+  
+script.
+  window.onscroll = function () {
+  myFunction();
+  };
+  function myFunction() {
+  if (
+  document.body.scrollTop > 0 ||
+  document.documentElement.scrollTop > 0
+  ) {
+  document.getElementById("navbaradd").classList.add("navbar__add");
+  } else {
+  document.getElementById("navbaradd").classList.remove("navbar__add");
+  }
+  }
+
+
