@@ -303,13 +303,13 @@
         width: -webkit-fit-content;
         width: -moz-fit-content;
         width: fit-content;
-        min-width: 122.5px;
+        min-width: 125.5px;
         vertical-align: middle;
         cursor: pointer; }
         #myblog.container-fluid .container .blog .read-more h5.h5-style::after {
           position: absolute;
           top: 0;
-          left: 122.5px;
+          left: 125.5px;
           content: "";
           width: 0;
           height: 0;
