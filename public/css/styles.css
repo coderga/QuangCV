@@ -321,7 +321,7 @@
         color: var(--color-secondary);
         position: absolute;
         top: 40%;
-        left: 80px;
+        left: 180px;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%); }
     #myblog.container-fluid .container .blog .blog-content img {
